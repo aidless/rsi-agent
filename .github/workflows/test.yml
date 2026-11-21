@@ -1,0 +1,36 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Show Python version
+        run: python --version
+      - name: Run 41 negative-control tests
+        run: python run_demo.py --self-test
+      - name: Deterministic demo + NC audit (no external deps)
+        run: python run_demo.py --generations 60 --nc-probes 60 --out /tmp/demo-ci.json
+      - name: Assert verified verdict
+        run: |
+          python - <<'PY'
+          import json
+          d = json.load(open("/tmp/demo-ci.json"))
+          assert d["verdict"] == "SELF_IMPROVEMENT_VERIFIED", d["verdict"]
+          assert d["audit_ok"] is True
+          assert d["nc_audit"] and d["nc_audit"]["passed"] is True
+          print("verdict=", d["verdict"], "best=", d["best_public_mean"])
+          PY
