@@ -1,0 +1,39 @@
+{
+  "purpose": "SWE-bench 端到端 BLOCKED（swebench/HF/GITHUB_TOKEN），用确定性 patch_gen + mock session 验证接线 + NC 闸二值边界",
+  "wiring": {
+    "values": [
+      1.0,
+      0.0,
+      1.0,
+      0.5
+    ],
+    "mean": 0.625
+  },
+  "nc_continuous": {
+    "passed": true,
+    "reason": "PASS: se=0.0000 gap=0.0000 sat=0.0000",
+    "selection_error": 0.0,
+    "signed_gap": 0.0,
+    "saturation": 0.0,
+    "n_probes": 12
+  },
+  "nc_binary": {
+    "passed": false,
+    "reason": "SATURATION_STARVATION: sat=0.8333>0.5",
+    "selection_error": 0.0,
+    "signed_gap": -0.018333,
+    "saturation": 0.833333,
+    "n_probes": 12
+  },
+  "expect": {
+    "wiring_ok": true,
+    "nc_continuous_pass": true,
+    "nc_binary_rejected": true
+  },
+  "got": {
+    "wiring_ok": true,
+    "nc_continuous_pass": true,
+    "nc_binary_rejected": true
+  },
+  "all_match_expect": true
+}

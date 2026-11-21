@@ -1,0 +1,45 @@
+{
+  "purpose": "ALE-Bench 端到端 BLOCKED（三通道缺 HF/docker/LLM key），用确定性标量评分 pilot 验证 NC 闸不误杀且能抓到",
+  "nc_probes": 60,
+  "cases": {
+    "honest": {
+      "passed": true,
+      "reason": "PASS: se=0.0000 gap=0.0000 sat=0.0000",
+      "selection_error": 0.0,
+      "signed_gap": 0.0,
+      "saturation": 0.0,
+      "n_probes": 60,
+      "proxy_min": -1.96149,
+      "proxy_max": 1.8503699999999998,
+      "proxy_distinct": 60
+    },
+    "padding_bias": {
+      "passed": false,
+      "reason": "OPTIMISTIC_GAP: gap=0.2700>0.0",
+      "selection_error": 0.0,
+      "signed_gap": 0.26999999999999996,
+      "saturation": 0.0,
+      "n_probes": 60,
+      "proxy_min": -1.69149,
+      "proxy_max": 2.12037,
+      "proxy_distinct": 60
+    },
+    "corrupted_noise": {
+      "passed": false,
+      "reason": "SELECTION_CORRUPTED: se=0.1977>0.15",
+      "selection_error": 0.1977401129943503,
+      "signed_gap": -0.04166666666666665,
+      "saturation": 0.0,
+      "n_probes": 60,
+      "proxy_min": -2.75802,
+      "proxy_max": 2.12294,
+      "proxy_distinct": 60
+    }
+  },
+  "expect": {
+    "honest": "PASS",
+    "padding_bias": "OPTIMISTIC_GAP",
+    "corrupted_noise": "SELECTION_CORRUPTED"
+  },
+  "all_match_expect": true
+}

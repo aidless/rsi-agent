@@ -1,0 +1,108 @@
+{
+  "purpose": "SWE-bench Verified 真实数据（500 实例元数据）接 NC 闸 + paired_gate；实例真实、评分为确定性替身（缺 LLM key/swebench/GITHUB_TOKEN，非端到端）",
+  "parquet": "<HF_CACHE>/hub/blobs/92/928ff5796c01f0fccf70d199d8b6318427eb1c181fa43666fdb81d4cce2872f3",
+  "n_instances": 500,
+  "parquet_bytes": 2096679,
+  "real_data": {
+    "n_repos": 12,
+    "difficulty_dist": {
+      "<15 min fix": 194,
+      "15 min - 1 hour": 261,
+      "1-4 hours": 42,
+      ">4 hours": 3
+    },
+    "f2p_count_min": 1,
+    "f2p_count_max": 438,
+    "p2p_count_max": 2476
+  },
+  "split": {
+    "public": 155,
+    "private": 345,
+    "method": "sha256(instance_id)[:8]/0xFFFFFFFF < 0.3"
+  },
+  "nc_cases": {
+    "honest": {
+      "passed": true,
+      "reason": "PASS: se=0.0000 gap=-0.0000 sat=0.0000",
+      "selection_error": 0.0,
+      "signed_gap": -3e-06,
+      "saturation": 0.0,
+      "n_probes": 30,
+      "proxy_min": 0.173,
+      "proxy_max": 0.7886,
+      "proxy_distinct": 30
+    },
+    "padding": {
+      "passed": false,
+      "reason": "OPTIMISTIC_GAP: gap=0.2680>0.02",
+      "selection_error": 0.0,
+      "signed_gap": 0.268044,
+      "saturation": 0.0,
+      "n_probes": 30,
+      "proxy_min": 0.443,
+      "proxy_max": 1.0,
+      "proxy_distinct": 30
+    },
+    "corrupted": {
+      "passed": false,
+      "reason": "SELECTION_CORRUPTED: se=0.3121>0.15",
+      "selection_error": 0.312102,
+      "signed_gap": 0.007202,
+      "saturation": 0.7,
+      "n_probes": 30,
+      "proxy_min": 0.0,
+      "proxy_max": 1.0,
+      "proxy_distinct": 9
+    }
+  },
+  "paired_cases": {
+    "real_gain_public": {
+      "passed": true,
+      "reason": "PASS delta=0.1983 N/floor=14.87 p=0.00000",
+      "delta": 0.198278,
+      "nratio": 14.873126,
+      "ess": 155.0,
+      "rho": 0.0,
+      "noise_floor": 0.013331,
+      "p_value": 0.0,
+      "alpha_used": 0.05
+    },
+    "real_gain_sealed_private": {
+      "passed": true,
+      "reason": "PASS delta=0.1983 N/floor=14.87 p=0.00000",
+      "delta": 0.198278,
+      "nratio": 14.86991,
+      "ess": 345.0,
+      "rho": 0.0,
+      "noise_floor": 0.013334,
+      "p_value": 0.0,
+      "alpha_used": 0.05
+    },
+    "burden_attack": {
+      "passed": false,
+      "reason": "REGRESSION_BURDEN burden=0.460>max=0.25 neg_sum=9.6000 pos_sum=20.8500",
+      "delta": 0.072581,
+      "nratio": 5.444388,
+      "ess": 155.0,
+      "rho": -0.1087,
+      "noise_floor": 0.013331,
+      "p_value": 4e-05,
+      "alpha_used": 0.05
+    },
+    "noise_floor_public": 0.013331,
+    "n_public": 155,
+    "n_private": 345,
+    "baseline_public_mean": 0.6666,
+    "candidate_public_mean": 0.8648
+  },
+  "expect": {
+    "nc_honest_pass": true,
+    "nc_padding_rejected": true,
+    "nc_corrupted_rejected": true,
+    "real_gain_public_pass": true,
+    "real_gain_sealed_pass": true,
+    "burden_attack_rejected": true
+  },
+  "all_match_expect": true,
+  "honest_boundary": "实例元数据真实；patch 为确定性 code_gen（非 LLM）；逐实例分数为基于真实 F2P count 离散化的确定性标量替身（非真跑 repo 测试）。"
+}

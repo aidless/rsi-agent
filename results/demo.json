@@ -1,0 +1,1915 @@
+{
+  "verdict": "SELF_IMPROVEMENT_VERIFIED",
+  "audit_ok": true,
+  "audit_detail": "OK 240 records",
+  "sealed_evaluations": 59,
+  "baseline_public_mean": 0.751431,
+  "best_public_mean": 1.245191,
+  "final_weights": [
+    0.683,
+    -0.4885,
+    0.886
+  ],
+  "generations": [
+    {
+      "generation": 0,
+      "policy_hash": "67728cf957ec",
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "public": {
+        "passed": false,
+        "reason": "HOLM_REJECT p=0.50000>=alpha=0.00083",
+        "delta": 0.0,
+        "nratio": 0.0,
+        "ess": 128.0,
+        "rho": 0.0,
+        "noise_floor": 0.015029,
+        "p_value": 0.5,
+        "alpha_used": 0.000833
+      },
+      "private": null,
+      "promoted": false
+    },
+    {
+      "generation": 1,
+      "policy_hash": "2c3c6c8e7186",
+      "weights": [
+        1.748,
+        -0.0504,
+        0.2607
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.1686 N/floor=11.22 p=0.00003",
+        "delta": 0.168632,
+        "nratio": 11.22075,
+        "ess": 128.0,
+        "rho": -0.0607,
+        "noise_floor": 0.015029,
+        "p_value": 3.2e-05,
+        "alpha_used": 0.000847
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.1989 N/floor=13.24 p=0.00001",
+        "delta": 0.198949,
+        "nratio": 13.238027,
+        "ess": 128.0,
+        "rho": -0.0575,
+        "noise_floor": 0.015029,
+        "p_value": 6e-06,
+        "alpha_used": 0.000847
+      },
+      "promoted": true
+    },
+    {
+      "generation": 2,
+      "policy_hash": "4105f672f7da",
+      "weights": [
+        1.7405,
+        0.7864,
+        0.4406
+      ],
+      "public": {
+        "passed": false,
+        "reason": "HOLM_REJECT p=0.80429>=alpha=0.00086",
+        "delta": -0.046785,
+        "nratio": -3.113061,
+        "ess": 120.8,
+        "rho": 0.029,
+        "noise_floor": 0.015029,
+        "p_value": 0.804291,
+        "alpha_used": 0.000862
+      },
+      "private": null,
+      "promoted": false
+    },
+    {
+      "generation": 3,
+      "policy_hash": "0e6ee23095a6",
+      "weights": [
+        1.7823,
+        -0.2725,
+        0.5172
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.3055 N/floor=20.33 p=0.00000",
+        "delta": 0.305516,
+        "nratio": 20.328937,
+        "ess": 128.0,
+        "rho": -0.0553,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000877
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.3442 N/floor=22.90 p=0.00000",
+        "delta": 0.344164,
+        "nratio": 22.900594,
+        "ess": 126.14,
+        "rho": 0.0073,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000877
+      },
+      "promoted": true
+    },
+    {
+      "generation": 4,
+      "policy_hash": "ba623d6066b7",
+      "weights": [
+        1.5619,
+        -0.1785,
+        0.6445
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.3335 N/floor=22.19 p=0.00000",
+        "delta": 0.333482,
+        "nratio": 22.189778,
+        "ess": 128.0,
+        "rho": -0.061,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000893
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.4202 N/floor=27.96 p=0.00000",
+        "delta": 0.420184,
+        "nratio": 27.958913,
+        "ess": 118.35,
+        "rho": 0.0392,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000893
+      },
+      "promoted": true
+    },
+    {
+      "generation": 5,
+      "policy_hash": "e268ffe0c72f",
+      "weights": [
+        1.2159,
+        -0.589,
+        0.2503
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.2774 N/floor=18.46 p=0.00000",
+        "delta": 0.277361,
+        "nratio": 18.455511,
+        "ess": 128.0,
+        "rho": -0.0986,
+        "noise_floor": 0.015029,
+        "p_value": 1e-06,
+        "alpha_used": 0.000909
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.3277 N/floor=21.81 p=0.00000",
+        "delta": 0.327734,
+        "nratio": 21.807336,
+        "ess": 128.0,
+        "rho": -0.0192,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000909
+      },
+      "promoted": true
+    },
+    {
+      "generation": 6,
+      "policy_hash": "ff71532c46a0",
+      "weights": [
+        1.1166,
+        -0.5494,
+        0.8034
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4513 N/floor=30.03 p=0.00000",
+        "delta": 0.451259,
+        "nratio": 30.026671,
+        "ess": 128.0,
+        "rho": -0.0559,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000926
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5670 N/floor=37.73 p=0.00000",
+        "delta": 0.56697,
+        "nratio": 37.726015,
+        "ess": 125.38,
+        "rho": 0.0103,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000926
+      },
+      "promoted": true
+    },
+    {
+      "generation": 7,
+      "policy_hash": "3bf59b2354e3",
+      "weights": [
+        1.6179,
+        -0.5242,
+        0.5936
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.3552 N/floor=23.63 p=0.00000",
+        "delta": 0.355153,
+        "nratio": 23.631777,
+        "ess": 128.0,
+        "rho": -0.0418,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000943
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.4180 N/floor=27.82 p=0.00000",
+        "delta": 0.418029,
+        "nratio": 27.815546,
+        "ess": 128.0,
+        "rho": -0.0143,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000943
+      },
+      "promoted": true
+    },
+    {
+      "generation": 8,
+      "policy_hash": "7f5e6a58459d",
+      "weights": [
+        1.0447,
+        -0.5584,
+        0.9402
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4757 N/floor=31.65 p=0.00000",
+        "delta": 0.475717,
+        "nratio": 31.654067,
+        "ess": 128.0,
+        "rho": -0.026,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000962
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5811 N/floor=38.67 p=0.00000",
+        "delta": 0.581119,
+        "nratio": 38.667515,
+        "ess": 120.63,
+        "rho": 0.0297,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.000962
+      },
+      "promoted": true
+    },
+    {
+      "generation": 9,
+      "policy_hash": "315945d51bad",
+      "weights": [
+        1.5028,
+        -0.7051,
+        0.4019
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.3049 N/floor=20.29 p=0.00000",
+        "delta": 0.304923,
+        "nratio": 20.289481,
+        "ess": 128.0,
+        "rho": -0.124,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00098
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.3724 N/floor=24.78 p=0.00000",
+        "delta": 0.372373,
+        "nratio": 24.777591,
+        "ess": 128.0,
+        "rho": -0.0045,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00098
+      },
+      "promoted": true
+    },
+    {
+      "generation": 10,
+      "policy_hash": "12268795c5bb",
+      "weights": [
+        0.8651,
+        -0.529,
+        0.9721
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4919 N/floor=32.73 p=0.00000",
+        "delta": 0.491901,
+        "nratio": 32.730981,
+        "ess": 128.0,
+        "rho": -0.0261,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5980 N/floor=39.79 p=0.00000",
+        "delta": 0.598042,
+        "nratio": 39.793539,
+        "ess": 121.35,
+        "rho": 0.0267,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001
+      },
+      "promoted": true
+    },
+    {
+      "generation": 11,
+      "policy_hash": "1a481482185c",
+      "weights": [
+        0.6511,
+        -0.6279,
+        1.0652
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4835 N/floor=32.17 p=0.00000",
+        "delta": 0.483474,
+        "nratio": 32.170254,
+        "ess": 128.0,
+        "rho": -0.031,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00102
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5863 N/floor=39.01 p=0.00000",
+        "delta": 0.586293,
+        "nratio": 39.011749,
+        "ess": 121.23,
+        "rho": 0.0272,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00102
+      },
+      "promoted": true
+    },
+    {
+      "generation": 12,
+      "policy_hash": "2d5730c2103a",
+      "weights": [
+        0.5196,
+        -0.3624,
+        1.3058
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4491 N/floor=29.88 p=0.00000",
+        "delta": 0.449125,
+        "nratio": 29.884645,
+        "ess": 128.0,
+        "rho": -0.0083,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001042
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5642 N/floor=37.54 p=0.00000",
+        "delta": 0.564166,
+        "nratio": 37.539464,
+        "ess": 120.54,
+        "rho": 0.03,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001042
+      },
+      "promoted": true
+    },
+    {
+      "generation": 13,
+      "policy_hash": "477c66c6f71d",
+      "weights": [
+        0.8203,
+        -0.6934,
+        0.7235
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4519 N/floor=30.07 p=0.00000",
+        "delta": 0.451873,
+        "nratio": 30.067531,
+        "ess": 128.0,
+        "rho": -0.057,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001064
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5571 N/floor=37.07 p=0.00000",
+        "delta": 0.557088,
+        "nratio": 37.068456,
+        "ess": 123.29,
+        "rho": 0.0188,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001064
+      },
+      "promoted": true
+    },
+    {
+      "generation": 14,
+      "policy_hash": "6e32b89b64a6",
+      "weights": [
+        0.5296,
+        -0.5897,
+        0.9718
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4814 N/floor=32.03 p=0.00000",
+        "delta": 0.481384,
+        "nratio": 32.031175,
+        "ess": 128.0,
+        "rho": -0.0329,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001087
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5817 N/floor=38.70 p=0.00000",
+        "delta": 0.581665,
+        "nratio": 38.703837,
+        "ess": 123.46,
+        "rho": 0.0181,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001087
+      },
+      "promoted": true
+    },
+    {
+      "generation": 15,
+      "policy_hash": "6dd21a930528",
+      "weights": [
+        0.7615,
+        -0.3408,
+        1.4621
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4632 N/floor=30.82 p=0.00000",
+        "delta": 0.463206,
+        "nratio": 30.821577,
+        "ess": 128.0,
+        "rho": -0.0196,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001111
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5682 N/floor=37.81 p=0.00000",
+        "delta": 0.568228,
+        "nratio": 37.809714,
+        "ess": 121.51,
+        "rho": 0.026,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001111
+      },
+      "promoted": true
+    },
+    {
+      "generation": 16,
+      "policy_hash": "1df15d5a3789",
+      "weights": [
+        0.9214,
+        -0.3815,
+        0.8762
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4818 N/floor=32.06 p=0.00000",
+        "delta": 0.481839,
+        "nratio": 32.061461,
+        "ess": 128.0,
+        "rho": -0.0343,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001136
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5845 N/floor=38.89 p=0.00000",
+        "delta": 0.584533,
+        "nratio": 38.894676,
+        "ess": 122.38,
+        "rho": 0.0224,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001136
+      },
+      "promoted": true
+    },
+    {
+      "generation": 17,
+      "policy_hash": "9dbe6585e8c1",
+      "weights": [
+        0.6512,
+        -0.4692,
+        0.9915
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4923 N/floor=32.76 p=0.00000",
+        "delta": 0.492287,
+        "nratio": 32.756651,
+        "ess": 128.0,
+        "rho": -0.031,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001163
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5964 N/floor=39.68 p=0.00000",
+        "delta": 0.596354,
+        "nratio": 39.681238,
+        "ess": 120.6,
+        "rho": 0.0298,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001163
+      },
+      "promoted": true
+    },
+    {
+      "generation": 18,
+      "policy_hash": "5fdc2c4f5e77",
+      "weights": [
+        0.521,
+        -0.3612,
+        1.0806
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4677 N/floor=31.12 p=0.00000",
+        "delta": 0.467718,
+        "nratio": 31.121848,
+        "ess": 128.0,
+        "rho": -0.0285,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00119
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5770 N/floor=38.39 p=0.00000",
+        "delta": 0.576971,
+        "nratio": 38.391495,
+        "ess": 120.98,
+        "rho": 0.0282,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00119
+      },
+      "promoted": true
+    },
+    {
+      "generation": 19,
+      "policy_hash": "ef9795df6017",
+      "weights": [
+        1.0735,
+        -0.0097,
+        0.8894
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.3865 N/floor=25.72 p=0.00000",
+        "delta": 0.386483,
+        "nratio": 25.716472,
+        "ess": 128.0,
+        "rho": -0.0631,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00122
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.4912 N/floor=32.68 p=0.00000",
+        "delta": 0.491179,
+        "nratio": 32.682901,
+        "ess": 128.0,
+        "rho": -0.0176,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00122
+      },
+      "promoted": true
+    },
+    {
+      "generation": 20,
+      "policy_hash": "5fefa5521b92",
+      "weights": [
+        0.5979,
+        -0.5931,
+        0.9418
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4813 N/floor=32.03 p=0.00000",
+        "delta": 0.481317,
+        "nratio": 32.026684,
+        "ess": 128.0,
+        "rho": -0.0338,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00125
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5871 N/floor=39.06 p=0.00000",
+        "delta": 0.587083,
+        "nratio": 39.064368,
+        "ess": 121.43,
+        "rho": 0.0263,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00125
+      },
+      "promoted": true
+    },
+    {
+      "generation": 21,
+      "policy_hash": "f4cbe69fcd93",
+      "weights": [
+        0.5148,
+        -0.6079,
+        0.9756
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4791 N/floor=31.88 p=0.00000",
+        "delta": 0.479065,
+        "nratio": 31.876876,
+        "ess": 128.0,
+        "rho": -0.0324,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001282
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5815 N/floor=38.69 p=0.00000",
+        "delta": 0.581514,
+        "nratio": 38.693809,
+        "ess": 123.46,
+        "rho": 0.018,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001282
+      },
+      "promoted": true
+    },
+    {
+      "generation": 22,
+      "policy_hash": "a532e6b4e508",
+      "weights": [
+        0.511,
+        -0.461,
+        1.2341
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4565 N/floor=30.38 p=0.00000",
+        "delta": 0.456518,
+        "nratio": 30.376566,
+        "ess": 128.0,
+        "rho": -0.0149,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001316
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5717 N/floor=38.04 p=0.00000",
+        "delta": 0.571711,
+        "nratio": 38.041522,
+        "ess": 118.97,
+        "rho": 0.0366,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001316
+      },
+      "promoted": true
+    },
+    {
+      "generation": 23,
+      "policy_hash": "3d1da44a8872",
+      "weights": [
+        0.6358,
+        -0.3276,
+        1.1249
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4784 N/floor=31.83 p=0.00000",
+        "delta": 0.478365,
+        "nratio": 31.830309,
+        "ess": 128.0,
+        "rho": -0.03,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001351
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5726 N/floor=38.10 p=0.00000",
+        "delta": 0.572618,
+        "nratio": 38.101829,
+        "ess": 121.4,
+        "rho": 0.0265,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001351
+      },
+      "promoted": true
+    },
+    {
+      "generation": 24,
+      "policy_hash": "d52ccb9bfbdd",
+      "weights": [
+        0.7846,
+        -0.7054,
+        0.8868
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4642 N/floor=30.89 p=0.00000",
+        "delta": 0.464226,
+        "nratio": 30.889463,
+        "ess": 128.0,
+        "rho": -0.0644,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001389
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5802 N/floor=38.61 p=0.00000",
+        "delta": 0.580233,
+        "nratio": 38.608565,
+        "ess": 122.36,
+        "rho": 0.0225,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001389
+      },
+      "promoted": true
+    },
+    {
+      "generation": 25,
+      "policy_hash": "6331233e8ff3",
+      "weights": [
+        0.6701,
+        -0.5651,
+        1.188
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4850 N/floor=32.28 p=0.00000",
+        "delta": 0.485049,
+        "nratio": 32.275038,
+        "ess": 128.0,
+        "rho": -0.0325,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001429
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5913 N/floor=39.35 p=0.00000",
+        "delta": 0.591345,
+        "nratio": 39.34792,
+        "ess": 122.68,
+        "rho": 0.0212,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001429
+      },
+      "promoted": true
+    },
+    {
+      "generation": 26,
+      "policy_hash": "66f7bca0a1be",
+      "weights": [
+        0.5212,
+        -0.4114,
+        0.8703
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4899 N/floor=32.60 p=0.00000",
+        "delta": 0.489925,
+        "nratio": 32.599498,
+        "ess": 128.0,
+        "rho": -0.0352,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001471
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5937 N/floor=39.51 p=0.00000",
+        "delta": 0.593744,
+        "nratio": 39.507585,
+        "ess": 120.32,
+        "rho": 0.0309,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001471
+      },
+      "promoted": true
+    },
+    {
+      "generation": 27,
+      "policy_hash": "2cdeb26a9fbd",
+      "weights": [
+        0.702,
+        -0.3672,
+        0.9298
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4911 N/floor=32.68 p=0.00000",
+        "delta": 0.491083,
+        "nratio": 32.676522,
+        "ess": 128.0,
+        "rho": -0.0355,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001515
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5972 N/floor=39.73 p=0.00000",
+        "delta": 0.597151,
+        "nratio": 39.734293,
+        "ess": 121.48,
+        "rho": 0.0261,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001515
+      },
+      "promoted": true
+    },
+    {
+      "generation": 28,
+      "policy_hash": "fba2314171ab",
+      "weights": [
+        0.5106,
+        -0.4824,
+        1.0958
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4763 N/floor=31.70 p=0.00000",
+        "delta": 0.476336,
+        "nratio": 31.695285,
+        "ess": 128.0,
+        "rho": -0.0316,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001563
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5816 N/floor=38.70 p=0.00000",
+        "delta": 0.581644,
+        "nratio": 38.702433,
+        "ess": 120.33,
+        "rho": 0.0309,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001563
+      },
+      "promoted": true
+    },
+    {
+      "generation": 29,
+      "policy_hash": "b004d3042a15",
+      "weights": [
+        0.6659,
+        -0.5351,
+        0.9494
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4927 N/floor=32.78 p=0.00000",
+        "delta": 0.492681,
+        "nratio": 32.782866,
+        "ess": 128.0,
+        "rho": -0.0303,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001613
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5974 N/floor=39.75 p=0.00000",
+        "delta": 0.597437,
+        "nratio": 39.753319,
+        "ess": 121.51,
+        "rho": 0.026,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001613
+      },
+      "promoted": true
+    },
+    {
+      "generation": 30,
+      "policy_hash": "abab29991a44",
+      "weights": [
+        0.6911,
+        -0.5862,
+        1.0276
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4910 N/floor=32.67 p=0.00000",
+        "delta": 0.490956,
+        "nratio": 32.668054,
+        "ess": 128.0,
+        "rho": -0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001667
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5936 N/floor=39.50 p=0.00000",
+        "delta": 0.593573,
+        "nratio": 39.496169,
+        "ess": 124.05,
+        "rho": 0.0157,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001667
+      },
+      "promoted": true
+    },
+    {
+      "generation": 31,
+      "policy_hash": "1c9d7759b667",
+      "weights": [
+        0.7753,
+        -0.4159,
+        0.8958
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4894 N/floor=32.56 p=0.00000",
+        "delta": 0.489379,
+        "nratio": 32.563176,
+        "ess": 128.0,
+        "rho": -0.0233,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001724
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5961 N/floor=39.66 p=0.00000",
+        "delta": 0.596096,
+        "nratio": 39.664036,
+        "ess": 122.07,
+        "rho": 0.0237,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001724
+      },
+      "promoted": true
+    },
+    {
+      "generation": 32,
+      "policy_hash": "270eb3fa34cd",
+      "weights": [
+        0.687,
+        -0.6005,
+        0.9782
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4910 N/floor=32.67 p=0.00000",
+        "delta": 0.490956,
+        "nratio": 32.668054,
+        "ess": 128.0,
+        "rho": -0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001786
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5896 N/floor=39.23 p=0.00000",
+        "delta": 0.589638,
+        "nratio": 39.234371,
+        "ess": 121.58,
+        "rho": 0.0257,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001786
+      },
+      "promoted": true
+    },
+    {
+      "generation": 33,
+      "policy_hash": "b80d8a66117d",
+      "weights": [
+        0.6727,
+        -0.5055,
+        1.0455
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4924 N/floor=32.76 p=0.00000",
+        "delta": 0.492361,
+        "nratio": 32.761595,
+        "ess": 128.0,
+        "rho": -0.0312,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001852
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5942 N/floor=39.54 p=0.00000",
+        "delta": 0.594196,
+        "nratio": 39.537668,
+        "ess": 120.62,
+        "rho": 0.0297,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001852
+      },
+      "promoted": true
+    },
+    {
+      "generation": 34,
+      "policy_hash": "2ae4a28e8f33",
+      "weights": [
+        0.595,
+        -0.5559,
+        0.8944
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4874 N/floor=32.43 p=0.00000",
+        "delta": 0.487366,
+        "nratio": 32.429213,
+        "ess": 128.0,
+        "rho": -0.0349,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001923
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5871 N/floor=39.06 p=0.00000",
+        "delta": 0.587083,
+        "nratio": 39.064368,
+        "ess": 121.43,
+        "rho": 0.0263,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.001923
+      },
+      "promoted": true
+    },
+    {
+      "generation": 35,
+      "policy_hash": "a18d229e79a3",
+      "weights": [
+        0.8164,
+        -0.5496,
+        0.9088
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4901 N/floor=32.61 p=0.00000",
+        "delta": 0.490142,
+        "nratio": 32.613908,
+        "ess": 128.0,
+        "rho": -0.0247,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5983 N/floor=39.81 p=0.00000",
+        "delta": 0.598253,
+        "nratio": 39.807622,
+        "ess": 121.31,
+        "rho": 0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002
+      },
+      "promoted": true
+    },
+    {
+      "generation": 36,
+      "policy_hash": "40610530ed7d",
+      "weights": [
+        0.6814,
+        -0.4986,
+        0.9429
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4934 N/floor=32.83 p=0.00000",
+        "delta": 0.493409,
+        "nratio": 32.831305,
+        "ess": 128.0,
+        "rho": -0.03,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002083
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.6001 N/floor=39.93 p=0.00000",
+        "delta": 0.600091,
+        "nratio": 39.929873,
+        "ess": 120.95,
+        "rho": 0.0283,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002083
+      },
+      "promoted": true
+    },
+    {
+      "generation": 37,
+      "policy_hash": "6e54f2cfda0d",
+      "weights": [
+        0.682,
+        -0.5593,
+        0.9431
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4913 N/floor=32.69 p=0.00000",
+        "delta": 0.491267,
+        "nratio": 32.688749,
+        "ess": 128.0,
+        "rho": -0.0268,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002174
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5957 N/floor=39.64 p=0.00000",
+        "delta": 0.595732,
+        "nratio": 39.639817,
+        "ess": 123.15,
+        "rho": 0.0193,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002174
+      },
+      "promoted": true
+    },
+    {
+      "generation": 38,
+      "policy_hash": "12758ff0ca04",
+      "weights": [
+        0.6241,
+        -0.5119,
+        0.988
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4913 N/floor=32.69 p=0.00000",
+        "delta": 0.491322,
+        "nratio": 32.692461,
+        "ess": 128.0,
+        "rho": -0.0316,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002273
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5934 N/floor=39.48 p=0.00000",
+        "delta": 0.593365,
+        "nratio": 39.482367,
+        "ess": 121.1,
+        "rho": 0.0277,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002273
+      },
+      "promoted": true
+    },
+    {
+      "generation": 39,
+      "policy_hash": "0bd85768f8a0",
+      "weights": [
+        0.6638,
+        -0.5167,
+        0.9628
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4927 N/floor=32.78 p=0.00000",
+        "delta": 0.492681,
+        "nratio": 32.782866,
+        "ess": 128.0,
+        "rho": -0.0303,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002381
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5982 N/floor=39.80 p=0.00000",
+        "delta": 0.598167,
+        "nratio": 39.801851,
+        "ess": 120.74,
+        "rho": 0.0292,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002381
+      },
+      "promoted": true
+    },
+    {
+      "generation": 40,
+      "policy_hash": "63f6eb024603",
+      "weights": [
+        0.6347,
+        -0.5142,
+        1.0119
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4913 N/floor=32.69 p=0.00000",
+        "delta": 0.491322,
+        "nratio": 32.692461,
+        "ess": 128.0,
+        "rho": -0.0316,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.0025
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5948 N/floor=39.58 p=0.00000",
+        "delta": 0.594826,
+        "nratio": 39.579541,
+        "ess": 120.39,
+        "rho": 0.0307,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.0025
+      },
+      "promoted": true
+    },
+    {
+      "generation": 41,
+      "policy_hash": "7c15758a2432",
+      "weights": [
+        0.6928,
+        -0.4634,
+        0.9364
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4937 N/floor=32.85 p=0.00000",
+        "delta": 0.493745,
+        "nratio": 32.853638,
+        "ess": 128.0,
+        "rho": -0.0304,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002632
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.6004 N/floor=39.95 p=0.00000",
+        "delta": 0.600445,
+        "nratio": 39.953437,
+        "ess": 121.13,
+        "rho": 0.0276,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002632
+      },
+      "promoted": true
+    },
+    {
+      "generation": 42,
+      "policy_hash": "f1fa82b99fb5",
+      "weights": [
+        0.7366,
+        -0.5348,
+        0.8652
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4902 N/floor=32.62 p=0.00000",
+        "delta": 0.490201,
+        "nratio": 32.617822,
+        "ess": 128.0,
+        "rho": -0.0267,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002778
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5981 N/floor=39.80 p=0.00000",
+        "delta": 0.598114,
+        "nratio": 39.798327,
+        "ess": 121.26,
+        "rho": 0.027,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002778
+      },
+      "promoted": true
+    },
+    {
+      "generation": 43,
+      "policy_hash": "58a1e56a0144",
+      "weights": [
+        0.6762,
+        -0.4473,
+        0.8615
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4934 N/floor=32.83 p=0.00000",
+        "delta": 0.493411,
+        "nratio": 32.831461,
+        "ess": 128.0,
+        "rho": -0.0295,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002941
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5997 N/floor=39.90 p=0.00000",
+        "delta": 0.599683,
+        "nratio": 39.902737,
+        "ess": 121.08,
+        "rho": 0.0278,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.002941
+      },
+      "promoted": true
+    },
+    {
+      "generation": 44,
+      "policy_hash": "5c3d0044eea4",
+      "weights": [
+        0.683,
+        -0.4885,
+        0.886
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4938 N/floor=32.85 p=0.00000",
+        "delta": 0.49376,
+        "nratio": 32.854667,
+        "ess": 128.0,
+        "rho": -0.0303,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003125
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5997 N/floor=39.90 p=0.00000",
+        "delta": 0.599683,
+        "nratio": 39.902737,
+        "ess": 121.08,
+        "rho": 0.0278,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003125
+      },
+      "promoted": true
+    },
+    {
+      "generation": 45,
+      "policy_hash": "4170bda1e491",
+      "weights": [
+        0.6454,
+        -0.4949,
+        0.7846
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4896 N/floor=32.58 p=0.00000",
+        "delta": 0.489621,
+        "nratio": 32.579224,
+        "ess": 128.0,
+        "rho": -0.0308,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003333
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5983 N/floor=39.81 p=0.00000",
+        "delta": 0.598251,
+        "nratio": 39.807466,
+        "ess": 121.1,
+        "rho": 0.0277,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003333
+      },
+      "promoted": true
+    },
+    {
+      "generation": 46,
+      "policy_hash": "3db186492716",
+      "weights": [
+        0.7187,
+        -0.5377,
+        0.9554
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4929 N/floor=32.80 p=0.00000",
+        "delta": 0.492926,
+        "nratio": 32.799148,
+        "ess": 128.0,
+        "rho": -0.0308,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003571
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5997 N/floor=39.90 p=0.00000",
+        "delta": 0.599683,
+        "nratio": 39.902737,
+        "ess": 121.08,
+        "rho": 0.0278,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003571
+      },
+      "promoted": true
+    },
+    {
+      "generation": 47,
+      "policy_hash": "3b9ad3354c5a",
+      "weights": [
+        0.7183,
+        -0.4707,
+        0.862
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4929 N/floor=32.80 p=0.00000",
+        "delta": 0.492892,
+        "nratio": 32.796918,
+        "ess": 128.0,
+        "rho": -0.0282,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003846
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5983 N/floor=39.81 p=0.00000",
+        "delta": 0.598253,
+        "nratio": 39.807622,
+        "ess": 121.31,
+        "rho": 0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.003846
+      },
+      "promoted": true
+    },
+    {
+      "generation": 48,
+      "policy_hash": "2a22589395c5",
+      "weights": [
+        0.7429,
+        -0.5314,
+        0.8737
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4927 N/floor=32.78 p=0.00000",
+        "delta": 0.492688,
+        "nratio": 32.783334,
+        "ess": 128.0,
+        "rho": -0.0277,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.004167
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5981 N/floor=39.80 p=0.00000",
+        "delta": 0.598114,
+        "nratio": 39.798327,
+        "ess": 121.26,
+        "rho": 0.027,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.004167
+      },
+      "promoted": true
+    },
+    {
+      "generation": 49,
+      "policy_hash": "9f60a163527a",
+      "weights": [
+        0.6557,
+        -0.4639,
+        0.895
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4937 N/floor=32.85 p=0.00000",
+        "delta": 0.493745,
+        "nratio": 32.853638,
+        "ess": 128.0,
+        "rho": -0.0304,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.004545
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.6004 N/floor=39.95 p=0.00000",
+        "delta": 0.600388,
+        "nratio": 39.949679,
+        "ess": 121.13,
+        "rho": 0.0276,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.004545
+      },
+      "promoted": true
+    },
+    {
+      "generation": 50,
+      "policy_hash": "02e6e37aca8b",
+      "weights": [
+        0.6668,
+        -0.5385,
+        0.8349
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4882 N/floor=32.49 p=0.00000",
+        "delta": 0.488206,
+        "nratio": 32.485106,
+        "ess": 128.0,
+        "rho": -0.0273,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.005
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5962 N/floor=39.67 p=0.00000",
+        "delta": 0.596176,
+        "nratio": 39.669416,
+        "ess": 121.75,
+        "rho": 0.025,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.005
+      },
+      "promoted": true
+    },
+    {
+      "generation": 51,
+      "policy_hash": "02c095d09f2d",
+      "weights": [
+        0.679,
+        -0.478,
+        0.9016
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4938 N/floor=32.85 p=0.00000",
+        "delta": 0.49376,
+        "nratio": 32.854667,
+        "ess": 128.0,
+        "rho": -0.0303,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.005556
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.6002 N/floor=39.94 p=0.00000",
+        "delta": 0.600238,
+        "nratio": 39.939651,
+        "ess": 121.14,
+        "rho": 0.0275,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.005556
+      },
+      "promoted": true
+    },
+    {
+      "generation": 52,
+      "policy_hash": "b6ecf7c5e746",
+      "weights": [
+        0.6907,
+        -0.5252,
+        0.8803
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4929 N/floor=32.80 p=0.00000",
+        "delta": 0.492926,
+        "nratio": 32.799148,
+        "ess": 128.0,
+        "rho": -0.0308,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00625
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5991 N/floor=39.86 p=0.00000",
+        "delta": 0.599107,
+        "nratio": 39.864435,
+        "ess": 120.97,
+        "rho": 0.0282,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.00625
+      },
+      "promoted": true
+    },
+    {
+      "generation": 53,
+      "policy_hash": "0ccc7edeabbd",
+      "weights": [
+        0.6712,
+        -0.4292,
+        0.9041
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4934 N/floor=32.83 p=0.00000",
+        "delta": 0.493426,
+        "nratio": 32.832413,
+        "ess": 128.0,
+        "rho": -0.0307,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.007143
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.6004 N/floor=39.95 p=0.00000",
+        "delta": 0.600445,
+        "nratio": 39.953437,
+        "ess": 121.13,
+        "rho": 0.0276,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.007143
+      },
+      "promoted": true
+    },
+    {
+      "generation": 54,
+      "policy_hash": "4c0e449723c2",
+      "weights": [
+        0.738,
+        -0.5163,
+        0.8595
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4927 N/floor=32.78 p=0.00000",
+        "delta": 0.492688,
+        "nratio": 32.783334,
+        "ess": 128.0,
+        "rho": -0.0277,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.008333
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5984 N/floor=39.82 p=0.00000",
+        "delta": 0.598434,
+        "nratio": 39.819614,
+        "ess": 121.29,
+        "rho": 0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.008333
+      },
+      "promoted": true
+    },
+    {
+      "generation": 55,
+      "policy_hash": "042cbbf9e3de",
+      "weights": [
+        0.7421,
+        -0.473,
+        0.91
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4929 N/floor=32.80 p=0.00000",
+        "delta": 0.492892,
+        "nratio": 32.796918,
+        "ess": 128.0,
+        "rho": -0.0282,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.01
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5994 N/floor=39.89 p=0.00000",
+        "delta": 0.599422,
+        "nratio": 39.885364,
+        "ess": 121.26,
+        "rho": 0.0271,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.01
+      },
+      "promoted": true
+    },
+    {
+      "generation": 56,
+      "policy_hash": "189c64c3af13",
+      "weights": [
+        0.6838,
+        -0.5213,
+        0.9827
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4927 N/floor=32.78 p=0.00000",
+        "delta": 0.492681,
+        "nratio": 32.782866,
+        "ess": 128.0,
+        "rho": -0.0303,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.0125
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5990 N/floor=39.86 p=0.00000",
+        "delta": 0.599048,
+        "nratio": 39.860521,
+        "ess": 120.78,
+        "rho": 0.029,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.0125
+      },
+      "promoted": true
+    },
+    {
+      "generation": 57,
+      "policy_hash": "fdd4a3946959",
+      "weights": [
+        0.6925,
+        -0.54,
+        0.9155
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4929 N/floor=32.80 p=0.00000",
+        "delta": 0.492926,
+        "nratio": 32.799148,
+        "ess": 128.0,
+        "rho": -0.0308,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.016667
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5979 N/floor=39.78 p=0.00000",
+        "delta": 0.597875,
+        "nratio": 39.782466,
+        "ess": 120.69,
+        "rho": 0.0294,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.016667
+      },
+      "promoted": true
+    },
+    {
+      "generation": 58,
+      "policy_hash": "a9fa14b5c3f9",
+      "weights": [
+        0.6964,
+        -0.5212,
+        0.838
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4909 N/floor=32.67 p=0.00000",
+        "delta": 0.490924,
+        "nratio": 32.665949,
+        "ess": 128.0,
+        "rho": -0.0285,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.025
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5983 N/floor=39.81 p=0.00000",
+        "delta": 0.598251,
+        "nratio": 39.807466,
+        "ess": 121.1,
+        "rho": 0.0277,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.025
+      },
+      "promoted": true
+    },
+    {
+      "generation": 59,
+      "policy_hash": "a9559063b08a",
+      "weights": [
+        0.6952,
+        -0.4914,
+        0.8459
+      ],
+      "public": {
+        "passed": true,
+        "reason": "PASS delta=0.4934 N/floor=32.83 p=0.00000",
+        "delta": 0.493411,
+        "nratio": 32.831461,
+        "ess": 128.0,
+        "rho": -0.0295,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.05
+      },
+      "private": {
+        "passed": true,
+        "reason": "PASS delta=0.5984 N/floor=39.82 p=0.00000",
+        "delta": 0.598434,
+        "nratio": 39.819614,
+        "ess": 121.29,
+        "rho": 0.0269,
+        "noise_floor": 0.015029,
+        "p_value": 0.0,
+        "alpha_used": 0.05
+      },
+      "promoted": true
+    }
+  ]
+}
